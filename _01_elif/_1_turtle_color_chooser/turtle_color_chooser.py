@@ -15,6 +15,26 @@ if __name__ == '__main__':
     window.bgcolor('white')
 
     # TODO 1) Create a new Turtle
+
+    x=turtle.Turtle()
+    x.speed(1)
+    while True:
+        col=input("what color pen?")
+        if col=="green":
+            x.pencolor("green")
+        elif col=="red":
+            x.pencolor("red")
+        elif col=="orange":
+            x.pencolor("orange")
+        elif col=="blue":
+            x.pencolor("blue")
+        else:
+            x.pencolor(get_random_color())
+        for i in range (4):
+            x.forward(50)
+            x.right(90)
+        x.width(10)
+
     #      2) Make the turtle draw a shape (this will take more than one line
     #         of code)
     #      3) Set the pen width to 10
